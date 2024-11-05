@@ -119,3 +119,15 @@
   }); // End of a document
 
 })(jQuery);
+
+// background color when scroll 
+var initScrollNav = function () {
+  var scroll = $(window).scrollTop();
+
+  // Remove any background color classes and enforce transparency
+  $('.navbar.fixed-top').removeClass("bg-primary bg-dark bg-light");
+  $('.navbar.fixed-top').css("background-color", "transparent");
+}
+
+
+$('.navbar.fixed-top').removeClass("bg-primary bg-dark bg-light"); // Remove any color classes

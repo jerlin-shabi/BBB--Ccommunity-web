@@ -342,8 +342,21 @@ a {
 /* Navbar styles */
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: var(--bs-navbar-active-color);
+  color: transparent;
 }
+
+/* CSS */
+.transparent-navbar {
+  background-color: transparent !important;
+}
+
+/* Navbar initial state */
+.navbar.fixed-top {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease;
+}
+
+
 
 .nav-link {
   color: #000;
